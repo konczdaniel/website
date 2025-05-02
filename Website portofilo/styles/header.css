@@ -1,0 +1,71 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top:10px;
+    z-index: 100;
+}
+
+/* portfolio image */
+.header-left-section {
+    height:100;
+}
+.portfolio-image {
+    height: 105px;
+    display: flex;
+    align-items: center;
+}
+
+.header-right-section {
+    display: flex;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #898989;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 10px;
+    margin: 0 30px;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+/* Hover Effect for header content */
+.header-content:hover {
+    color: rgba(255, 255, 255, 0.67);
+}
+
+.header-content::before {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0; /* Start with 0 width */
+    height: 3px; 
+    background: linear-gradient(to right, #656565,
+    #7f42a7, #6600c5, #5300a0, #757575, #656565);
+    background-size: 200%;
+    animation: animationGradient 1.5s linear infinite;
+    box-shadow: 0 0 15px rgb(255,255,255,0.3);
+    transition: width 0.5s ease; 
+}
+@keyframes animationGradient{
+    to{
+        background-position:200%;
+    }
+}
+.header-content:hover::before {
+    width: 100%; /* On hover, expand to full width */
+}
+
+

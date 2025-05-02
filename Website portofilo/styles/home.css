@@ -1,0 +1,114 @@
+.home-container {
+  display: flex;
+  flex-direction: row; /* horizontal layout */
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 65px; /* space for header */
+  padding-left: 5%;
+  padding-right: 5%;
+  min-height: calc(100vh - 70px);
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1 1 40%;
+  max-width: 600px;
+  z-index: 90;
+  margin-left: 5%;
+}
+
+.tag-box {
+  position: relative;
+  width: 18rem;
+  height: 2.5rem;
+  margin-top: 25px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #656565,
+    #7f42a7, #6600c5, #5300a0, #757575, #656565);
+  background-size: 200%;
+  animation: tagGradient 2.5s linear infinite;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes tagGradient {
+  to {
+    background-position: 200%;
+  }
+}
+
+.tag-box .tag {
+  position: absolute;
+  inset: 3px;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.tag-box .tag:hover {
+  color: #956afa;
+}
+
+.content h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.651);
+  text-shadow: 0 0 10px rgba(128, 128, 128, 0.418);
+}
+
+.text-changer {
+  height: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  color: #7c7c7c;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 29px;
+  box-sizing: content-box;
+}
+
+.roles-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.role {
+  display: block;
+  height: 100%;
+  padding-left: 6px;
+  color: #956afa;
+  animation: role-change 14s infinite;
+}
+
+@keyframes role-change {
+  10% { transform: translateY(-102%); }
+  25% { transform: translateY(-100%); }
+  35% { transform: translateY(-202%); }
+  50% { transform: translateY(-200%); }
+  60% { transform: translateY(-302%); }
+  75% { transform: translateY(-300%); }
+  85% { transform: translateY(-402%); }
+  100% { transform: translateY(-400%); }
+}
+
+/* ✅ Responsive 3D Spline Viewer */
+.robot-3d,
+.robot-scaler {
+  flex: 1 1 50%;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  min-height: 500px;
+  aspect-ratio: 1.4 / 1;
+}
+
+
+
