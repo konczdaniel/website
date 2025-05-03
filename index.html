@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>
       Koncz Daniel
@@ -27,12 +27,27 @@
         </div>
         <div class="header-right-section">
           <a data-aos="fade-down" data-aos-duration="1500" href="#home" class="header-content">Home</a>
-          <a data-aos="fade-down" data-aos-duration="2000" href="#portfolio" class="header-content">Portfolio</a>
-          <a data-aos="fade-down" data-aos-duration="2500" href="#resume" class="header-content">Resume</a>
+          <a data-aos="fade-down" data-aos-duration="2000" href="#portfolio" class="header-content">About</a>
+          <a data-aos="fade-down" data-aos-duration="2500" href="#resume" class="header-content">Projects</a>
           <a data-aos="fade-down" data-aos-duration="3000" href="#contact" class="header-content">Contact</a>
+        </div>
+        <!-- Hamburger Menu -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span ></span>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <a data-aos="fade-down" data-aos-duration="1000" href="#home" class="mobile-link">Home</a>
+          <a data-aos="fade-down" data-aos-duration="1500" href="#portfolio" class="mobile-link">About</a>
+          <a data-aos="fade-down" data-aos-duration="2000" href="#resume" class="mobile-link">Projects</a>
+          <a data-aos="fade-down" data-aos-duration="2500" href="#contact" class="mobile-link">Contact</a>
         </div>
       </div>
       
+
+
       <div class="home-container">
         <div class="content">
           <h1 data-aos="fade-zoom-in"
@@ -83,5 +98,6 @@
       <script>
         AOS.init();
       </script>
+      <script src="main.js"></script>
     </body>
 </html>

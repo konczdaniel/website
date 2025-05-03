@@ -1,98 +1,195 @@
 /* */
-@media (max-width: 1414px){
-  .home-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    margin-top: 105px;
-    margin-left:0; 
-    padding:0;
+@media (max-width: 1600px) {
+  .text-changer{
+    font-size:25px;
   }
-  .content h1 {
-    font-size: 2.8rem;
-  }
-  .text-changer {
-    font-size: 24px;
+  .content h1{
+    font-size:3rem;
   }
   .header-content {
     margin:0;
-    font-size: 20px;
-    margin-right: 20px;
+    margin-right: 25px;
+    font-size: 19px;
   }
   .portfolio-image {
-    height: 90px;
+    height: 80px;
 }
 }
-@media (max-width: 889px){
-  .home-container {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    margin-bottom:30px;
+@media (max-width: 1440px) {
+  .text-changer{
+    font-size:25px;
   }
-  .content {
-    flex: 1 1 40%;
-    max-width: 600px;
-    margin-left:0;
-    
-  }
-  .content h1 {
-    font-size: 2.6rem;
-  }
-  .text-changer {
-    font-size: 21px;
+  .content h1{
+    font-size:3rem;
   }
   .header-content {
+    margin:0;
     margin-right: 20px;
     font-size: 18px;
   }
   .portfolio-image {
     height: 80px;
 }
-
-
 }
-@media(max-width:700px){
-  .home-container {
-    margin-top: 85px;
-
+@media (max-width: 1272px) {
+  .text-changer{
+    font-size:25px;
   }
-  .content h1 {
-    font-size: 2.4rem;
-  }
-  .text-changer {
-    font-size: 20px;
+  .content h1{
+    font-size:3rem;
   }
   .header-content {
     margin:0;
-    font-size: 16px;
-    margin-right: 12px;
+    margin-right: 15px;
+    font-size: 17px;
   }
   .portfolio-image {
-    height: 90px;
-  }
-
+    height: 80px;
 }
-@media(max-width:600px){
-  .home-container {
-    margin-top: 100px;
-
+}
+@media (max-width: 1220px) {
+  .text-changer{
+    font-size:23px;
   }
-  .content h1 {
-    font-size: 2.3rem;
-  }
-  .text-changer {
-    font-size: 19px;
+  .content h1{
+    font-size:2.8rem;
   }
   .header-content {
     margin:0;
-    font-size: 16px;
-    margin-right: 12px;
+    margin-right: 15px;
+    font-size: 17px;
   }
   .portfolio-image {
-    height: 85px;
+    height: 80px;
+}
+}
+@media (max-width: 1194px) {
+  .text-changer{
+    font-size:21px;
+  }
+  .content h1{
+    font-size:2.6rem;
+  }
+  .header-content {
+    margin:0;
+    margin-right: 14px;
+    font-size: 16px;
+  }
+  .portfolio-image {
+    height: 80px;
+}
+}
+@media (max-width: 1167px) {
+  .text-changer{
+    font-size:19px;
+  }
+  .content h1{
+    font-size:2.4rem;
+  }
+  .header-content {
+    margin:0;
+    margin-right: 14px;
+    font-size: 16px;
+  }
+  .portfolio-image {
+    height: 80px;
+}
+}
+@media (max-width: 1024px) {
+  .home-container {
+    flex-wrap: wrap;
+    display:flex;
+    flex-direction:column;
+    margin-top:25px;
+  }
+  .text-changer{
+    font-size:16px;
+  }
+  .content h1{
+    font-size:1.9rem;
+  }
+  .content{
+    margin-left:0px;
+  }
+  .header-content {
+    margin:0;
+    margin-right: 14px;
+    font-size: 16px;
+  }
+  .portfolio-image {
+    height: 75px;
+  }
+  .tag-box{
+    width:14.2rem;
+    height:2.2rem;
+    margin-top:20px;
+  }
+  .tag{
+    font-size:14px;
+  }
+}
+
+@media(max-width:768px){
+  .home-container {
+    margin-top:30px;
+  }
+  .text-changer{
+    font-size:14px;
+  }
+  .content h1{
+    font-size:1.7rem;
+  }
+  .header-content {
+    margin:0;
+    margin-right: 13px;
+    font-size: 14px;
+  }
+  .portfolio-image {
+    height: 70px;
+  }
+  .tag-box{
+    width:13.8rem;
+    height:2rem;
+    margin-top:16px;
+  }
+  .tag{
+    font-size:14px;
+  }
+}
+@media(max-width:550px){
+  .home-container {
+    margin-top:30px;
+  }
+  .text-changer{
+    font-size:12px;
+  }
+  .content h1{
+    font-size:1.5rem;
+  }
+  .header-content {
+    margin:0;
+    margin-right: 11px;
+    font-size: 12px;
+  }
+  .portfolio-image {
+    height: 65px;
+  }
+  .tag-box{
+    width:13.4rem;
+    height:1.7rem;
+    margin-top:11px;
+  }
+  .tag{
+    font-size:12px;
+  }
+}
+/* This is for mobile*/
+@media screen and (max-width: 426px) {
+  .header-right-section {
+  display: none;
   }
 
+.hamburger {
+  display: flex;
+  }
 }

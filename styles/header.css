@@ -13,10 +13,10 @@
 
 /* portfolio image */
 .header-left-section {
-    height:100;
+    height:85;
 }
 .portfolio-image {
-    height: 105px;
+    height: 85px;
     display: flex;
     align-items: center;
 }
@@ -29,13 +29,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 30px;
     text-decoration: none;
     color: #898989;
     font-size: 20px;
     font-weight: 600;
     padding: 0 10px;
-    margin: 0 30px;
     position: relative;
     letter-spacing: 0.5px;
 }
@@ -66,6 +65,63 @@
 }
 .header-content:hover::before {
     width: 100%; /* On hover, expand to full width */
+}
+
+/* Hamburger and Mobile Menu Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    margin-right:10px;
+    z-index: 101;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2.5px;
+    background: #898989;
+    border-radius: 3px;
+    transition: all 0.3 ease-in-out;
+}
+/*marimile meniului*/
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height:100vh;
+    width:250px;
+    padding: 50px 10px;
+    box-shadow:0 10px 10px rgba(0,0,0,0.5);
+    
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+.hamburger.show span:nth-child(2){
+    opacity:0;
+}
+.hamburger.show span:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+}
+.hamburger.show span:nth-child(2){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.mobile-link {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #898989;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: 500;
 }
 
 
