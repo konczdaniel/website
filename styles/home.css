@@ -99,7 +99,6 @@
   100% { transform: translateY(-400%); }
 }
 
-/* ✅ Responsive 3D Spline Viewer */
 .robot-3d,
 .robot-scaler {
   flex: 1 1 50%;
@@ -108,7 +107,9 @@
   height: auto;
   min-height: 500px;
   aspect-ratio: 1.4 / 1;
+  position:relative;
 }
-
-
+#logo{
+  display:none !important;
+}
 

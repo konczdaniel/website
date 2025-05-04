@@ -1,3 +1,4 @@
+
 .header {
     height: 55px;
     display: flex;
@@ -7,14 +8,15 @@
     top: 0;
     right: 0;
     left: 0;
-    margin-top:10px;
+    padding: 10px;
     z-index: 100;
+    margin-top: 10px;
 }
 
-/* portfolio image */
 .header-left-section {
-    height:85;
+    height: 85px;
 }
+
 .portfolio-image {
     height: 85px;
     display: flex;
@@ -34,12 +36,12 @@
     color: #898989;
     font-size: 20px;
     font-weight: 600;
-    padding: 0 10px;
+    padding: 0 20px;
     position: relative;
     letter-spacing: 0.5px;
+    padding-bottom: 10px;
 }
 
-/* Hover Effect for header content */
 .header-content:hover {
     color: rgba(255, 255, 255, 0.67);
 }
@@ -49,22 +51,24 @@
     position: absolute;
     bottom: 2px;
     left: 0;
-    width: 0; /* Start with 0 width */
-    height: 3px; 
+    width: 0;
+    height: 3px;
     background: linear-gradient(to right, #656565,
-    #7f42a7, #6600c5, #5300a0, #757575, #656565);
+        #7f42a7, #6600c5, #5300a0, #757575, #656565);
     background-size: 200%;
     animation: animationGradient 1.5s linear infinite;
-    box-shadow: 0 0 15px rgb(255,255,255,0.3);
-    transition: width 0.5s ease; 
+    box-shadow: 0 0 15px rgb(255, 255, 255, 0.3);
+    transition: width 0.5s ease;
 }
-@keyframes animationGradient{
-    to{
-        background-position:200%;
+
+@keyframes animationGradient {
+    to {
+        background-position: 200%;
     }
 }
+
 .header-content:hover::before {
-    width: 100%; /* On hover, expand to full width */
+    width: 100%;
 }
 
 /* Hamburger and Mobile Menu Styles */
@@ -74,7 +78,7 @@
     flex-direction: column;
     gap: 5px;
     padding: 10px;
-    margin-right:10px;
+    margin-right: 10px;
     z-index: 101;
 }
 
@@ -83,45 +87,45 @@
     height: 2.5px;
     background: #898989;
     border-radius: 3px;
-    transition: all 0.3 ease-in-out;
-}
-/*marimile meniului*/
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height:100vh;
-    width:250px;
-    padding: 50px 10px;
-    box-shadow:0 10px 10px rgba(0,0,0,0.5);
-    
-    backdrop-filter: blur(4px);
-    border-radius: 10px;
-    z-index: 100;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
-.mobile-menu.show {
-    display: flex;
-}
-.hamburger.show span:nth-child(2){
-    opacity:0;
-}
-.hamburger.show span:nth-child(1){
-    transform:translateY(8px) rotate(45deg);
-}
-.hamburger.show span:nth-child(2){
-    transform: translateY(-8px) rotate(-45deg);
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    right: -768px; 
+    height: 100vh;
+    width: 100%;
+    padding: 120px 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.329);
+    flex-direction: column;
+    transition: right 0.4s ease-in-out;
+    display:none;
 }
 .mobile-link {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     color: #898989;
     text-decoration: none;
-    margin: 10px 0;
-    font-weight: 500;
+    margin: 20px;
+    font-size:25px;
+    font-weight: 600;
 }
-
-
+.mobile-menu.show {
+    right: 0; 
+}
+  
+  .hamburger.show span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger.show span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.show span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
