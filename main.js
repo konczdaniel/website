@@ -1,7 +1,6 @@
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 
-
 window.addEventListener('load', () => {
   setTimeout(() => {
     document.querySelectorAll('.hamburger span').forEach(span => {
@@ -26,3 +25,23 @@ document.querySelectorAll('.mobile-link').forEach(link => {
     document.getElementById('mobileMenu').classList.remove('show');
   });
 });
+
+setTimeout(()=>{
+  const trdiv = document.getElementById("testing")
+  //console.log(trdiv)
+  recParse(trdiv);
+}, 1000);
+
+function recParse(elem){
+  //console.log(elem.tagName + " " + elem.id);
+  if(elem.tagName == 'A' && elem.id == 'logo')
+    elem.remove();
+  let childrenElements = elem.querySelectorAll("*");
+
+  if(elem.tagName == "SPLINE-VIEWER")
+    childrenElements = elem.shadowRoot.querySelectorAll("*")
+
+  childrenElements.forEach(function(child){
+    recParse(child);
+  });
+}

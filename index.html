@@ -6,14 +6,20 @@
     </title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- this is for the slider -->
+      <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
       <link rel="stylesheet" href="styles/header.css">
       <link rel="stylesheet" href="styles/general.css">
       <link rel="stylesheet" href="styles/home.css">
+      <link rel="stylesheet" href="styles/about.css">
+      <link rel="stylesheet" href="styles/projects.css">
       <link rel="stylesheet" href="styles/responsive.css">
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
   </head>
     <body>
       <img data-aos="fade-down" data-aos-duration="1000" src="icons/gradient.png" class="gradient-background" alt="gradient">
@@ -21,12 +27,14 @@
 
       <div class="header">
         <div class="header-left-section">
+          <a href="#home">
           <img data-aos="fade-down" data-aos-duration="1200" src="icons/whitelogo.png" class="portfolio-image">
+          </a>
         </div>
         <div class="header-right-section">
           <a data-aos="fade-down" data-aos-duration="1200" href="#home" class="header-content">Home</a>
-          <a data-aos="fade-down" data-aos-duration="1400" href="#portfolio" class="header-content">About</a>
-          <a data-aos="fade-down" data-aos-duration="1600" href="#resume" class="header-content">Projects</a>
+          <a data-aos="fade-down" data-aos-duration="1400" href="#about" class="header-content">About</a>
+          <a data-aos="fade-down" data-aos-duration="1600" href="#projects" class="header-content">Projects</a>
           <a data-aos="fade-down" data-aos-duration="1800" href="#contact" class="header-content">Contact</a>
         </div>
         <!-- Hamburger Menu -->
@@ -38,16 +46,24 @@
 
         <div class="mobile-menu" id="mobileMenu">
           <a href="#home" class="mobile-link">Home</a>
-          <a href="#portfolio" class="mobile-link">About</a>
-          <a href="#resume" class="mobile-link">Projects</a>
+          <a href="#about" class="mobile-link">About</a>
+          <a href="#projects" class="mobile-link">Projects</a>
           <a href="#contact" class="mobile-link">Contact</a>
         </div>
       </div>
       
 
 
-      <div class="home-container">
+      <div class="home-container" id="home">
         <div class="content">
+          <div 
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0" 
+          data-aos-duration="1200"
+          class="hello-text">Hello I'm 
+        </div>
           <h1 data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-delay="300"
@@ -80,23 +96,131 @@
           </div>
         </div>
         
-          <div class="robot-scaler">
+          <div class="robot-scaler" id="testing">
             <spline-viewer 
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
               data-aos-delay="300"
               data-aos-offset="0" 
-              data-aos-duration="2500" class="robot-3d" url="https://prod.spline.design/u3irmxx-ObGub1Ke/scene.splinecode">
-
+              data-aos-duration="3000" url="https://prod.spline.design/u3irmxx-ObGub1Ke/scene.splinecode">
             </spline-viewer>
           </div>
-        
       </div>
-      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
+      <div class="about-page">
+        <div id="about"></div>
+        <div class="about-me-container">
+          <div class="get-to-know">Get to Know More</div>
+          <div class="about-me">About Me</div>
+        </div>
+
+        <div class="about-content-container">
+          <div class="about-inner-container">
+            <div class="arch-log-div"><img class="arch-logo" src="icons/arch-logo.png"></div>
+            <div class="about-big-container">
+              <div class="about-text-container">
+                <div class="text">
+                  <img class="about-icons" src="icons/experience.png">
+                  Experience 
+                  <div class="text-content">+2 years</div>
+                  <div class="text-content">Personal Projects</div>
+                </div>
+                <div class="text">
+                  <img class="about-icons" src="icons/education.png">
+                  Education
+                  <div class="text-content">B.Sc Bachelors Degree</div>
+                  <div class="text-content">Automation and Computer Science</div>
+                </div>
+              </div>
+              <div class=" text-content about-text-down"> I’m currently second year student, focused on building meaningful projects that blend logic with design. My journey started with a fascination for how things work, which quickly evolved into a love for coding, problem-solving, and building software that makes life easier or more enjoyable.</div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+         <div class="about-me-container">
+          <div class="get-to-know">Explore My</div>
+          <div class="about-me">Experience</div>
+        </div>
+
+        <div class="skills-outer-container">
+        <div class="skills-container">
+          <div class="skills-box">
+            <div class="skills">Familiar Technologies</div>
+          </div>
+        </div>
+      <div class="wrapper">
+        <div class="item item1"><img class="logo-size" src="icons/html-logo.png"></div>
+        <div class="item item2"><img class="logo-size" src="icons/css-logo.png"></div>
+        <div class="item item3"><img class="logo-size" src="icons/javascript-logo.png"></div>
+        <div class="item item4"><img class="logo-size" src="icons/c-logo.png"></div>
+        <div class="item item5"><img class="logo-size" src="icons/c++-logo.png"></div>
+        <div class="item item6"><img class="logo-size" src="icons/csharp-logo.png"></div>
+        <div class="item item7"><img class="logo-size" src="icons/git-logo.png"></div>
+        <div class="item item8"><img class="logo-size" src="icons/github-logo-test.png"></div>
+      </div>
+      </div>
+    </div>
+
+    <div class="about-me-container-down">
+      <div class="get-to-know">Browse My Recent</div>
+      <div class="about-me">Projects &#10549;</div>
+    </div>
+
+    <div class="swiper-background" id="projects"
+>
+      
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="background: url(images/slide01.jpg);">
+                <div class="slide-info">
+                    <h1 class="slide-title">Projects</h1>
+                    <p class="slide-desc">&lt; swipe &gt;</p>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background: url(images/Screenshot\ 2025-05-07\ 112656.png);">
+                <div class="slide-info">
+                    <h1 class="slide-title">Rock Paper Scissors</h1>
+                    <a href="https://konczdaniel.github.io/rock-paper-scissors/" class="slide-desc">Press Me
+                    </a>
+                      <br><br>
+                      <a class="github-button" href="https://github.com/konczdaniel/rock-paper-scissors"> 
+                          <img class="git-logo" src="icons/github-logo.png"> 
+                      </a>    
+                </div>
+            </div>
+            <div class="swiper-slide" style="background: url(images/slide03.jpg);">
+                <div class="slide-info">
+                    <h1 class="slide-title">slide 3</h1>
+                    <a class="slide-desc">coming soon</a>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background: url(images/slide04.jpg);">
+                <div class="slide-info">
+                    <h1 class="slide-title">slide 4</h1>
+                    <a class="slide-desc">coming soon</a>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.90/build/spline-viewer.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
         AOS.init();
       </script>
       <script src="main.js"></script>
+      
     </body>
 </html>

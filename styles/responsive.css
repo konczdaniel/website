@@ -15,6 +15,11 @@
     height: 80px;
 }
 }
+@media(max-width:1464px){
+  .text-content{
+    font-size: 16px;
+  }
+}
 @media (max-width: 1440px) {
   .text-changer{
     font-size:25px;
@@ -31,6 +36,15 @@
     height: 80px;
 }
 }
+@media(max-width:1343px){
+  .text-content{
+    font-size: 13px;
+  }
+  .arch-logo{
+    height:400px;
+    width:400px;
+  }
+}
 @media (max-width: 1272px) {
   .text-changer{
     font-size:25px;
@@ -45,6 +59,14 @@
   }
   .portfolio-image {
     height: 80px;
+}
+.arch-logo{
+  height:400px;
+  width:400px;
+}
+.text{
+  font-size:16px;
+  padding:30px;
 }
 }
 @media (max-width: 1220px) {
@@ -95,6 +117,20 @@
     height: 80px;
 }
 }
+
+@media(max-width:1070px){
+  .text{
+    font-size:16px;
+  }
+  .text-content{
+    font-size: 13px;
+  }
+  .arch-logo{
+    height:330px;
+    width:330px;
+  }
+
+}
 @media (max-width: 1024px) {
   .home-container {
     flex-wrap: wrap;
@@ -126,6 +162,61 @@
   }
   .tag{
     font-size:14px;
+  }
+  /* this is for the about page responsivenes*/
+  .about-big-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Center children horizontally */
+    flex:1;   
+}
+  .arch-logo {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .about-inner-container {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 30px;
+  }
+
+  .arch-logo-div {
+    margin-bottom: 30px;
+  }
+
+  .about-text-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .text {
+    width: 90%;
+    max-width: 400px;
+    margin:0;
+  }
+.text:nth-child(2) {
+    margin-left: 0;
+  }
+  .about-text-down {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin-left:32px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .text-content {
+    font-size: 16px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+    .item{
+
+  width: 100px;
+  height: 90px;
+  left: max(calc(110px * 8), 100%);
   }
 }
 
@@ -169,11 +260,36 @@
   .tag{
     font-size:14px;
   }
+  .arch-logo{
+  height: 140px !important;
+  width: 140px !important;
+  }
+  .about-me{
+    font-size: 26px;
+  }
+  .skills-container{
+    scale:0.8;
+  }
+  .item{
+    scale:0.7;
+    width: 100px;
+    height: 90px;
+    left: max(calc(90px * 8), 100%);
+  }
 }
-@media(max-width:425px){
+@media(max-width:466px){
   .mobile-link {
     font-size:20px;
 }
+  .skills-container{
+    scale:0.7;
+  }
+  .item{
+  scale:0.7;
+  width: 100px;
+  height: 90px;
+  left: max(calc(70px * 8), 100%);
+  }
 }
 @media(max-width:390px){
   
@@ -191,6 +307,12 @@
 .tag{
   font-size:13px;
 }
+  .item{
+  scale:0.7;
+  width: 100px;
+  height: 90px;
+  left: max(calc(60px * 8), 100%);
+  }
 }
 @media(max-width:320){
   .mobile-link{
