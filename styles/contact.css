@@ -1,0 +1,107 @@
+#contact{
+  margin-top: 40px;
+  padding:1px;
+}
+.contact-me-page{
+  font-family:"poppins",sans-serif;
+  margin-top:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+}
+.full-name-email{
+  display:flex;
+  flex-direction:row;
+}
+.message-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-top:20px;
+}
+#name,
+#email,
+#message,
+#send-button{
+  padding:20px;
+  border-radius:20px;
+  background-color:rgb(25,25,25);
+  color:#fdf5e6;
+  border: rgb(92, 90, 90) 1px solid;
+  box-shadow:#656565 0px 0px 5px;
+  font-size:16px;
+}
+#name{
+  margin-right:10px;
+}
+#email{
+  margin-left:10px;
+}
+.send-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 2.5rem;
+  margin-top: 20px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #656565,
+    #7f42a7, #6600c5, #5300a0, #757575, #656565);
+  background-size: 200%;
+  animation: tagGradient 2.5s linear infinite;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+@keyframes tagGradient {
+  to {
+    background-position: 200%;
+  }
+}
+#send-button{
+  padding:0;
+  position: absolute;
+  inset: 3px;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#send-button:hover {
+  color: #956afa;
+}
+#error-message{
+  display:flex;
+  justify-content:center;
+  color: #956afa;
+  font-size: 16px;
+  margin-top: 10px;
+}
+#name:focus,
+#email:focus,
+#message:focus{
+  outline:none;
+  box-shadow:0 0 5px #fdf5e6;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #956afa inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.bottom-header{
+  margin-bottom:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:rgb(85, 85, 85);
+  font-size:14px;
+}
+.social-media{
+  width:40px;
+}
+.social-media:hover{
+  transform:scale(1.1);
+}

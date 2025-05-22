@@ -290,6 +290,26 @@
   height: 90px;
   left: max(calc(70px * 8), 100%);
   }
+  .swiper-slide-active {
+    transform:scale(0.7);
+    transition: 0.3s ease-in-out all; 
+  }
+  .hello-text{
+    font-size: 12px;
+  }
+  .full-name-email{
+    flex-direction:column
+  }
+  #name,
+  #email{
+    margin:0;
+    margin-bottom:20px;
+    font-size:14px;
+    padding:18px;
+  }
+  .social-media{
+    width:35px;
+  }
 }
 @media(max-width:390px){
   

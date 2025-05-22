@@ -17,7 +17,7 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});
+}); 
 
 // Unified trigger for all slide changes
 swiper.on('slideChangeTransitionStart', updateMainBackground);
@@ -36,14 +36,3 @@ function updateMainBackground() {
   }
 }
 
-// Disable right-click context menu
-document.addEventListener('contextmenu', function(e) {
-  e.preventDefault();
-}, false);
-
-// Disable some common Ctrl+ key combinations (e.g. Ctrl+U, Ctrl+S)
-document.addEventListener('keydown', function(e) {
-  if (e.ctrlKey && ['u', 's', 'a', 'c'].includes(e.key.toLowerCase())) {
-    e.preventDefault();
-  }
-}, false);

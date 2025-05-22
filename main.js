@@ -18,7 +18,7 @@ function toggleMenu() {
   mobileMenu.classList.toggle('show');
 }
 
-// Optional: Close mobile menu when clicking a link
+// Close mobile menu when clicking a link
 document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', () => {
     document.querySelector('.hamburger').classList.remove('show');
@@ -30,7 +30,7 @@ setTimeout(()=>{
   const trdiv = document.getElementById("testing")
   //console.log(trdiv)
   recParse(trdiv);
-}, 1000);
+}, 500);
 
 function recParse(elem){
   //console.log(elem.tagName + " " + elem.id);
