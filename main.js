@@ -30,7 +30,7 @@ setTimeout(()=>{
   const trdiv = document.getElementById("testing")
   //console.log(trdiv)
   recParse(trdiv);
-}, 500);
+}, 1000);
 
 function recParse(elem){
   //console.log(elem.tagName + " " + elem.id);

@@ -290,10 +290,15 @@
   height: 90px;
   left: max(calc(70px * 8), 100%);
   }
-  .swiper-slide-active {
-    transform:scale(0.7);
-    transition: 0.3s ease-in-out all; 
+  .swiper-wrapper{
+    display: flex;
+    height:0;
   }
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+}
   .hello-text{
     font-size: 12px;
   }
